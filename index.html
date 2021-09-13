@@ -10,19 +10,17 @@
 <body>
 
   <header>
-    <h1>Book Store</h1>
-
     <nav>
       <ul>
-        <a href="#contact">Contact</a>
-        <a href="#">Shop</a>
-        <a href="#">Login</a>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Login</a></li>
       </ul>  
-    </nav>
-
-    
+    </nav>  
   </header>
-
+  
+  <main>
+    <h1>Book Store</h1>
     <section class="imageselection">
       <img src="./assets/images/image-1.png" alt="Coming Soon">
       <figcaption>Welcome to the Book Store</figcaption>
@@ -30,23 +28,39 @@
 
     <h2>Please contact us here</h2>
 
-    <form id="contact">
+  </main>
 
-      <div>
-        <label for="username">Name</label>
-        <input type="text" name="username" value="" class="input" placeholder="Enter your name" />
-      </div>
+  <form id="contact">
 
-      <div>
+    <fieldset>
+      <legend>Contact Form</legend>
+      <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="" class="input" placeholder="Enter your name" />
+      </p>
+      </fieldset>
+
+      <fieldset>
+      <p>
         <label for="email">Email</label>
-        <input type="text" name="email" value="" class="input" placeholder="Enter your email" />
-      </div>
+        <input type="email" name="email" value="" class="input" placeholder="Enter your email" />
+      </p>
+      </fieldset>
 
-      <div>
-        <input type="submit" value="Submit">
-      </div>
+      <fieldset>
+        <p>
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" placeholder="Enter your phone number">
+        </p>
+      </fieldset>
 
-    </form>
+      <fieldset>
+      <p>
+        <button type="submit">Submit Info</button>
+      </p>
+    </fieldset>
+
+  </form>
 
 
 
